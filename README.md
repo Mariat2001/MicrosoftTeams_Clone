@@ -32,7 +32,7 @@ ps:id should be auto incremented.
 2. Clone the Daily_Reminder repository:
 
 ```sh
-git clone https://github.com/Mariat2001/Daily_Reminder
+git clone https://github.com/Mariat2001/Reminder-App.git .
 ```
 3. Change to the project directory:
 
