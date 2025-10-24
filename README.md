@@ -2,7 +2,7 @@
   <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
 </p>
 <p align="center">
-    <h1 align="center">Movie App</h1>
+    <h1 align="center">Reminder App</h1>
 </p>
 
 
@@ -22,33 +22,30 @@
 <hr>
 
 ##  Getting start
-1. Create the movieapp database in phpmyadmin containing these followinf tables:
+1. Create the dailyreminder database in phpmyadmin containing these followin tables:
    
 ```sh
-favorites -> columns: id/user_id/movie_id/title/poster_path/release_date/status 
-```
-```sh
-users -> columns: id/name/email/password/phone/created_at/ 
+reminders/users/settings
 ```
 ps:id should be auto incremented.
 
-2. Clone the movie_app repository:
+2. Clone the Daily_Reminder repository:
 
 ```sh
-git clone https://github.com/Mariat2001/movie_app
+git clone https://github.com/Mariat2001/Daily_Reminder
 ```
 3. Change to the project directory:
 
 ```sh
-cd movie_app
+cd Daily_Reminder
 ```
   A-***Frontend Setup***
   
-1. In the Movie_App run this the Frontend Folder following these steps:
+1. In the Daily_Reminder run this the Frontend Folder following these steps:
 
 ```sh
 1. Navigate to the frontend folder:
-   cd Frontend_app
+   cd reminder_app
 ```
 ```sh
 1. Install dependencies:
@@ -56,11 +53,11 @@ cd movie_app
 ```
 ```sh
 2. Run the development server:
-    npm run dev
+    npm start
 ```
 
   B-***Backend Setup***
-1. In the Movie_App run this the Backend Folder following these steps:
+1. In the Daily_Reminder run this the Backend Folder following these steps:
 
 ```sh
 1. Navigate to the backend folder:
@@ -101,4 +98,21 @@ cd movie_app
 8. Nodemon: Automatically restarts the server when code changes are detected:
   npm install --save-dev nodemon
 ```
+##  Send an email
+```sh
+💡 Summary
+Step	What to do
+1	Create a Nodemailer transporter
+2	Use .env variables for credentials
+3	Use an app password (if Gmail)
+4	Verify transporter connection
+5	Send test email
+```
 
+```sh
+1. Using Gmail — use an App Password: 
+If you’re using Gmail:
+. Go to your Google Account → Security → App Passwords
+. Create an App Password (select “Mail” and “Other (Custom name)”).
+. Use that password in your .env file.
+```
